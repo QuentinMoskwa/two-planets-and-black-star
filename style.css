@@ -1,0 +1,111 @@
+body {
+    background-image: url("https://d1fmx1rbmqrxrr.cloudfront.net/cnet/i/edit/2021/07/voie-lactee-1200.jpg");
+    background-size: cover;
+    background-position: 40px 20px 20px 20px;
+}
+
+.container {
+display: flex;
+align-content: space-around;
+justify-content: center;
+margin-top: 200px;
+}
+
+
+.grosastre {
+    position: fixed;
+    height: 200px;
+    width:200px ;
+    border-radius: 100% ;
+    background-color: rgb(0, 0, 0);
+    box-shadow: inset 10px 10px 30px 5px rgb(32, 32, 32),  0px 0px 60px 30px white;
+    z-index: 1;
+
+}
+ .astre2 {
+    position: fixed;
+    left: 80%;
+    margin-top: 50px;
+    height: 100px;
+    width:100px ;
+    border-radius: 100% ;
+    background-color: rgb(221, 221, 221);
+ animation: 6s rotation2 linear infinite;
+    box-shadow: inset -20px 0px 10px 0px black,  0px 0px 10px 5px rgb(181, 181, 181);
+}
+
+
+.astre1 {
+    position: fixed;
+    left:20%;
+    margin-top: 50px;
+    height: 80px;
+    width:80px ;
+    border-radius: 100% ;
+    background-color: rgb(189, 198, 255);
+    animation: 6s rotation1 linear infinite;
+    box-shadow: inset 20px 0px 10px 0px black, 0px 0px 10px 5px rgb(181, 181, 181);
+}
+
+
+ @keyframes rotation2 {   
+from {
+    z-index: 1;
+    left: 80%
+}
+
+
+25% { 
+    transform: translateY(100px);
+    left: 50%;
+    box-shadow: inset 0px 0px 200px 50px black, 0px 0px 10px 5px rgb(181, 181, 181);
+}
+
+50% { 
+    left: 20%;
+    box-shadow: inset 20px 0px 10px 0px black, 0px 0px 10px 5px rgb(181, 181, 181);
+}
+
+75% {left: 50%;
+    transform: translateY(-100px);
+
+}
+
+to {left: 80%;
+
+}
+}
+
+
+ @keyframes rotation1 {      
+from {
+    left: 20%
+}
+
+
+25% { 
+    transform: translateY(-100px);
+    left: 50%;
+    box-shadow: inset 0px 0px 100px 0px black, 0px 0px 10px 5px rgb(181, 181, 181);
+}
+
+50% { 
+    left: 80%;
+    box-shadow: inset -20px 0px 10px 0px rgb(32, 32, 32), 0px 0px 10px 5px rgb(181, 181, 181);
+}
+
+75% {left: 50%;
+    z-index: 2;
+    box-shadow: inset 0px 0px 100px 50px black; 
+    transform: translateY(100px);
+
+}
+
+to {left:20%;
+
+
+}
+}
+
+
+/* utiliser  */
